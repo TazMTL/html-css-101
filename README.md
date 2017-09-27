@@ -1,13 +1,6 @@
 HTML & CSS: 101
 ===============
 
-## From HTTP to HTML
-Last week, we focused on the HTTP protocol.  Using NodeJS and Express, we created a web server, or HTTP server. Our server was able to respond to requests to different URLs with appropriate responses. Often, these responses were in the form of HTML documents.
-
-To send an HTML document to a browser, a web server will send the text of the HTML document in the **body of the HTTP response**. If it's a good server, it will also include an **http header** of `Content-Type: text/html` to let the browser know that the content in the text document being transfered is HTML.
-
-Upon receiving a text document that is detected as HTML, the browser will treat the document in a special way: it will parse it using a set of rules, and draw -- or **render** -- the HTML document.
-
 ## Parsing HTML: the DOM
 HTML is a text along with tags giving special meaning to this text. For the browser to be able to do anything with an HTML document, it first has to **parse the document**, and create an **internal structure** called the DOM, or **Document Object Model**: an object-based model of the HTML document.
 
